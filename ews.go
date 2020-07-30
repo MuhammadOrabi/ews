@@ -4,10 +4,11 @@ import (
 	"bytes"
 	"crypto/tls"
 	"fmt"
-	"github.com/Azure/go-ntlmssp"
 	"io/ioutil"
 	"net/http"
 	"net/http/httputil"
+
+	"github.com/Azure/go-ntlmssp"
 )
 
 const (
@@ -17,7 +18,7 @@ const (
 		xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
 		xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   		<soap:Header>
-    		<t:RequestServerVersion Version="Exchange2013_SP1" />
+    		<t:RequestServerVersion Version="Exchange2007" />
   		</soap:Header>
   		<soap:Body>
 `

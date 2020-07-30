@@ -49,8 +49,8 @@ type FreeBusyViewOptions struct {
 }
 
 type TimeWindow struct {
-	StartTime time.Time `xml:"t:StartTime"`
-	EndTime   time.Time `xml:"t:EndTime"`
+	StartTime string `xml:"t:StartTime"`
+	EndTime   string `xml:"t:EndTime"`
 }
 
 type TimeZone struct {
